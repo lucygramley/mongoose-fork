@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mongoose = require("mongoose");
+var mongodb_1 = require("mongodb");
+var tsd_1 = require("tsd");
+(0, tsd_1.expectType)(mongoose.isObjectIdOrHexString(new mongodb_1.ObjectId()));
+(0, tsd_1.expectType)(mongoose.isObjectIdOrHexString(new mongoose.Types.ObjectId()));
+(0, tsd_1.expectType)(mongoose.isObjectIdOrHexString('string'));
+(0, tsd_1.expectType)(mongoose.isObjectIdOrHexString(new Error()));
+(0, tsd_1.expectType)(mongoose.isValidObjectId(new mongodb_1.ObjectId()));
+(0, tsd_1.expectType)(mongoose.isValidObjectId(new mongoose.Types.ObjectId()));
+(0, tsd_1.expectType)(mongoose.isValidObjectId('12345'));
+(0, tsd_1.expectError)(mongoose.isValidObjectId());
+(0, tsd_1.expectType)(mongoose.now());

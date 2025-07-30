@@ -1,0 +1,98 @@
+[2025-07-29 16:06:08.513] Changing working directory from C:\Users\lucygramley to c:\Users\lucygramley\Downloads\ai_test_repos\mongoose-fork
+[2025-07-29 16:06:14.925] Updating 13 packages at c:\Users\lucygramley\Downloads\ai_test_repos\mongoose-fork
+[2025-07-29 16:06:18.732] Analyzing project at: c:\Users\lucygramley\Downloads\ai_test_repos\mongoose-fork
+[2025-07-29 16:06:18.733] Analyzing repository structure...
+[2025-07-29 16:06:18.936] No monorepo structure detected
+[2025-07-29 16:06:18.938] Generating installation commands...
+[2025-07-29 16:06:23.088] Found 10 package installation tasks
+[2025-07-29 16:06:23.094] Installing packages...
+[2025-07-29 16:06:25.289] Looking for local TypeScript installation...
+[2025-07-29 16:06:25.294] Using local TypeScript compiler at: c:\Users\lucygramley\Downloads\ai_test_repos\mongoose-fork\node_modules\typescript\lib\tsc.js
+[2025-07-29 16:06:25.295] Building project to collect baseline errors...
+[2025-07-29 16:06:40.559] Found 105 errors in initial build
+[2025-07-29 16:07:32.787] Updating packages in the following order:
+ @babel/core @babel/preset-env babel-loader webpack, @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint, buffer, cheerio, express, marked, mongodb-runner, nyc
+[2025-07-29 16:07:32.920] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:07:32.934] Updating package group (1/8): @babel/core @babel/preset-env babel-loader webpack
+[2025-07-29 16:07:40.142] Updating @babel/core from 7.27.7 to 7.28.0, @babel/preset-env from 7.27.2 to 7.28.0, babel-loader from 8.2.5 to 10.0.0, webpack from 5.99.9 to 5.101.0
+[2025-07-29 16:07:46.749] No new errors found after updating @babel/core @babel/preset-env babel-loader webpack.
+[2025-07-29 16:07:46.751] Modified files while updating package(s) @babel/core @babel/preset-env babel-loader webpack: 
+package.json
+[2025-07-29 16:07:46.752] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:07:46.755] Package group @babel/core @babel/preset-env babel-loader webpack completed in 00:00:13.
+Successfully upgraded 4 packages: @babel/core,@babel/preset-env,babel-loader,webpack
+[2025-07-29 16:07:46.757] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:07:46.759] Updating package group (2/8): @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint
+[2025-07-29 16:07:53.863] Updating @typescript-eslint/eslint-plugin from ^8.19.1 to ^8.38.0, @typescript-eslint/parser from ^8.19.1 to ^8.38.0, eslint from 8.57.1 to 9.32.0
+[2025-07-29 16:08:00.526] No new errors found after updating @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint.
+[2025-07-29 16:08:00.528] Modified files while updating package(s) @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint: 
+package.json
+[2025-07-29 16:08:00.531] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:08:00.533] Package group @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint completed in 00:00:13.
+Successfully upgraded 3 packages: @typescript-eslint/eslint-plugin,@typescript-eslint/parser,eslint
+[2025-07-29 16:08:00.535] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:08:00.536] Updating package group (3/8): buffer
+[2025-07-29 16:08:04.581] Updating buffer from ^5.6.0 to ^6.0.3
+[2025-07-29 16:08:11.248] No new errors found after updating buffer.
+[2025-07-29 16:08:11.251] Modified files while updating package(s) buffer: 
+package.json
+[2025-07-29 16:08:11.253] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:08:11.255] Package group buffer completed in 00:00:10.
+Successfully upgraded 1 packages: buffer
+[2025-07-29 16:08:11.257] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:08:11.259] Updating package group (4/8): cheerio
+[2025-07-29 16:08:16.159] Updating cheerio from 1.1.0 to 1.1.2
+[2025-07-29 16:08:22.929] No new errors found after updating cheerio.
+[2025-07-29 16:08:22.931] Modified files while updating package(s) cheerio: 
+package.json
+[2025-07-29 16:08:22.933] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:08:22.935] Package group cheerio completed in 00:00:11.
+Successfully upgraded 1 packages: cheerio
+[2025-07-29 16:08:22.937] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:08:22.939] Updating package group (5/8): express
+[2025-07-29 16:08:27.404] Updating express from ^4.19.2 to ^5.1.0
+[2025-07-29 16:08:34.270] No new errors found after updating express.
+[2025-07-29 16:08:34.272] Modified files while updating package(s) express: 
+package.json
+[2025-07-29 16:08:34.274] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:08:34.276] Package group express completed in 00:00:11.
+Successfully upgraded 1 packages: express
+[2025-07-29 16:08:34.279] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:08:34.280] Updating package group (6/8): marked
+[2025-07-29 16:08:38.374] Updating marked from 15.0.12 to 16.1.1
+[2025-07-29 16:08:45.091] No new errors found after updating marked.
+[2025-07-29 16:08:45.093] Modified files while updating package(s) marked: 
+package.json
+[2025-07-29 16:08:45.095] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:08:45.097] Package group marked completed in 00:00:10.
+Successfully upgraded 1 packages: marked
+[2025-07-29 16:08:45.099] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:08:45.101] Updating package group (7/8): mongodb-runner
+[2025-07-29 16:08:49.278] Updating mongodb-runner from ^5.8.2 to ^5.9.2
+[2025-07-29 16:08:55.974] No new errors found after updating mongodb-runner.
+[2025-07-29 16:08:55.976] Modified files while updating package(s) mongodb-runner: 
+package.json
+[2025-07-29 16:08:55.977] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:08:55.978] Package group mongodb-runner completed in 00:00:10.
+Successfully upgraded 1 packages: mongodb-runner
+[2025-07-29 16:08:55.981] Using VS Code provided token for Kusto authentication
+[2025-07-29 16:08:55.982] Updating package group (8/8): nyc
+[2025-07-29 16:09:00.186] Updating nyc from 15.1.0 to 17.1.0
+[2025-07-29 16:09:06.844] No new errors found after updating nyc.
+[2025-07-29 16:09:06.845] Modified files while updating package(s) nyc: 
+package.json
+[2025-07-29 16:09:06.847] Deleted temp directory for PackageUpdater.
+[2025-07-29 16:09:06.849] Package group nyc completed in 00:00:10.
+Successfully upgraded 1 packages: nyc
+[2025-07-29 16:09:06.850] All packages updated.
+[2025-07-29 16:09:06.852] Updater completed in 00:02:58.
+Successfully upgraded 13 packages.
+Partially upgraded 0 packages.
+Unable to upgrade 0 packages.
+Total packages available for upgrade: 13
+[2025-07-29 16:09:06.856] === Token Usage Summary ===
+Total API Calls: 0
+Total Tokens: 0 (Prompt: 0, Completion: 0)
+Usage by Model:
+
+[2025-07-29 16:09:06.857] Report written to c:\Users\lucygramley\.vscode-insiders\extensions\emilyfischer.jsts-upgrade-extension-0.0.1\dist\updates\logs\mongoose-fork_2025-07-29_16-06-08.txt

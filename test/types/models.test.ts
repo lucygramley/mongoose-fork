@@ -482,8 +482,8 @@ function gh12100() {
 
   const Model = model('Model', schema);
 
-  Model.syncIndexes({ continueOnError: true, noResponse: true });
-  Model.syncIndexes({ continueOnError: false, noResponse: true });
+  Model.syncIndexes({ continueOnError: true });
+  Model.syncIndexes({ continueOnError: false });
 }
 
 (function gh12070() {

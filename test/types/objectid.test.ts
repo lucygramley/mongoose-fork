@@ -2,6 +2,6 @@ import { Types } from 'mongoose';
 
 const oid = new Types.ObjectId();
 oid.toHexString();
-oid._id;
+oid.toHexString();
 
 (new Types.ObjectId()).toHexString();

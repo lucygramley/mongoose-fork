@@ -437,8 +437,8 @@ function schemaInstanceMethodsAndQueryHelpers() {
 function gh12100() {
     var schema = new mongoose_1.Schema();
     var Model = (0, mongoose_1.model)('Model', schema);
-    Model.syncIndexes({ continueOnError: true, noResponse: true });
-    Model.syncIndexes({ continueOnError: false, noResponse: true });
+    Model.syncIndexes({ continueOnError: true });
+    Model.syncIndexes({ continueOnError: false });
 }
 (function gh12070() {
     var schema_with_string_id = new mongoose_1.Schema({ _id: String, nickname: String });

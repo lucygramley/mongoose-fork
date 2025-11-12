@@ -1,0 +1,10 @@
+[[{
+  "Pattern": "mongoose\\.syncIndexes\\(\\s*\\{\\s*continueOnError:\\s*(true|false),\\s*noResponse:\\s*true\\s*\\}\\s*\\)",
+  "Replacement": "mongoose.syncIndexes({ continueOnError: $1 })"
+}],[{
+  "Pattern": "Model\\.syncIndexes\\(\\{\\s*continueOnError:\\s*true,\\s*noResponse:\\s*true\\s*\\}\\)",
+  "Replacement": "Model.syncIndexes({ continueOnError: true })"
+}],[{
+  "Pattern": "syncIndexes\\(\\s*\\{\\s*continueOnError:\\s*false,\\s*noResponse:\\s*true\\s*\\}\\s*\\)",
+  "Replacement": "syncIndexes({ continueOnError: false })"
+}]]

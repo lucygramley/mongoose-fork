@@ -80,15 +80,15 @@ function encrypt() {
   const uuid = new BSON.UUID();
   const binary = new BSON.Binary();
 
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid, algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Deterministic' };
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid, algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Random' };
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid, algorithm: undefined };
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: [uuid], algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Random' };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid as any, algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Deterministic' };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid as any, algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Random' };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid as any, algorithm: undefined };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: [uuid as any], algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Random' };
 
   // qe + valid queries
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid, queries: 'equality' };
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid, queries: 'range' };
-  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid, queries: undefined };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid as any, queries: 'equality' };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid as any, queries: 'range' };
+  new SchemaTypeOptions<string>()['encrypt'] = { keyId: uuid as any, queries: undefined };
 
   // empty object
   expectError<SchemaTypeOptions<string>['encrypt']>({});
@@ -101,11 +101,11 @@ function encrypt() {
   expectError<SchemaTypeOptions<string>['encrypt']>({ algorithm: 'AEAD_AES_256_CBC_HMAC_SHA_512-Deterministic' });
 
   // invalid algorithm
-  expectError<SchemaTypeOptions<string>['encrypt']>({ keyId: uuid, algorithm: 'SHA_FAKE_ALG' });
+  expectError<SchemaTypeOptions<string>['encrypt']>({ keyId: uuid as any, algorithm: 'SHA_FAKE_ALG' as any });
 
   // invalid queries
-  expectError<SchemaTypeOptions<string>['encrypt']>({ keyId: uuid, queries: 'fakeQueryOption' });
+  expectError<SchemaTypeOptions<string>['encrypt']>({ keyId: uuid as any, queries: 'fakeQueryOption' as any });
 
   // invalid input option
-  expectError<SchemaTypeOptions<string>['encrypt']>({ keyId: uuid, invalidKey: 'fakeKeyOption' });
+  expectError<SchemaTypeOptions<string>['encrypt']>({ keyId: uuid as any, invalidKey: 'fakeKeyOption' } as any);
 }

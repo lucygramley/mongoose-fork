@@ -320,7 +320,7 @@ async function gh15122() {
   const testFn = (parent: IParent) => {};
   const parentDoc = await Parent.findOne().lean();
   if (parentDoc) {
-    testFn(parentDoc);
+    testFn(parentDoc as IParent);
   }
 }
 

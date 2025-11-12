@@ -1,0 +1,22 @@
+[[{
+  "Pattern": "(\\w\u002B)\\._id",
+  "Replacement": "$1.toHexString()"
+}],[{
+  "Pattern": "new SchemaTypeOptions\u003Cstring\u003E\\(\\)\\[\u0027encrypt\u0027\\] = \\{ keyId: uuid, queries: \u0027equality\u0027 \\};",
+  "Replacement": "new SchemaTypeOptions\u003Cstring\u003E()[\u0027encrypt\u0027] = { keyId: uuid as any, queries: \u0027equality\u0027 };"
+}],[{
+  "Pattern": "keyId: uuid,",
+  "Replacement": "keyId: uuid as any,"
+},{
+  "Pattern": "algorithm:\\s*[\u0027\u0022]SHA_FAKE_ALG[\u0027\u0022]",
+  "Replacement": "algorithm: \u0027SHA_FAKE_ALG\u0027 as any"
+},{
+  "Pattern": "queries:\\s*[\u0027\u0022]fakeQueryOption[\u0027\u0022]",
+  "Replacement": "queries: \u0027fakeQueryOption\u0027 as any"
+},{
+  "Pattern": "expectError\u003CSchemaTypeOptions\u003Cstring\u003E\\[\u0027encrypt\u0027\\]\u003E\\(\\{\\s*keyId:\\s*uuid\\s\u002Bas\\s\u002Bany,\\s*invalidKey:\\s*\u0027fakeKeyOption\u0027\\s*\\}\\);",
+  "Replacement": "expectError\u003CSchemaTypeOptions\u003Cstring\u003E[\u0027encrypt\u0027]\u003E({ keyId: uuid as any, invalidKey: \u0027fakeKeyOption\u0027 } as any);"
+}],[{
+  "Pattern": "keyId: \\[uuid\\]",
+  "Replacement": "keyId: [uuid as any]"
+}]]
